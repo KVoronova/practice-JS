@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password</title>
+    <link rel="icon" type="image/x-icon" href="img/lock.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <!-- <script src="script.js" defer></script> -->
+    <script src="script-2.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a <br><span>Random Password</span></h1>
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <img class="copy" src="/img/copy-2.png" alt="Copy">
+        </div>
+
+        <!--Generation with advanced options (script-2.js)  -->
+        <div class="options">
+            <label>
+                <input class="custom-checkbox" type="checkbox" id="lowercase" checked>
+                <span></span>
+                <span>abc</span>
+            </label>
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                <span></span>
+                <span>ABC</span>
+            </label>
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                <span></span>
+                <span>123</span>
+            </label>
+            <label>
+                <input type="checkbox" id="symbols" checked>
+                <span></span>
+                <span>@#$</span>
+            </label>
+        </div>  
+
+            <div class="password-length">
+                <span>Password length: <span id="length-value">4</span></span>
+                <div class="password-length__wrapper">
+                    <button type="button" id="decrease-btn" class="password-length__btn password-length__btn--minus">-</button>
+                    <input type="range" id="length-slider" min="4" max="32" value="4">
+                    <button type="button" id="increase-btn" class="password-length__btn password-length__btn--plus">+</button>
+                </div>
+            </div>
+
+         <!--NEW OPT END -->
+
+        <button class="btn"><img src="img/generate.png" alt="Generate pass">Generate password</button>
+    </div>
+</body>
+</html>

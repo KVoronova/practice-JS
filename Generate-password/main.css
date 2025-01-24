@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #002339;
+    color: #ffff;
+}
+
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+
+.container h1 {
+    font-size: 45px;
+    font-weight: 500;
+
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 2px solid #019f55;
+    padding-bottom: 7px;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+
+.display img {
+    width: 35px;
+    cursor: pointer;
+}
+
+.display input {
+    border: none;
+    outline: 0;
+    font-size: 24px;
+    width: 100%;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    color: #ffffff;
+    background: #019f55;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+/* CSS advanced options  */
+
+.options {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 15px;
+   
+}
+
+.options label {
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.options input[type="checkbox"] {
+    display: none;
+}
+
+.options input[type="checkbox"] + span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #019f55;
+    border-radius: 4px;
+    background-color: inherit;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+    transform: 0.3s;
+}
+
+.options input[type="checkbox"]:checked + span {
+    background-color: #019f55;
+    border-color: #333;
+}
+
+.options input[type="checkbox"]:checked + span::before{
+    content: ' ✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+
+.password-length {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.password-length__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.password-length__wrapper input[type="range"] {
+    width: 100%;
+}
+
+.password-length__wrapper button{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   font-size: 20px;
+   padding: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.password-length__wrapper button:hover {
+    background: #02723e;
+}
+
+
+.password-length__wrapper input[type="range"] {
+    flex: 1;
+    margin: 0 10px;
+    appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.password-length__wrapper input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #019f55;
+    border-radius: 50%;
+    cursor: pointer;
+    
+} 
