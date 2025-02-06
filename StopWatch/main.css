@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/02-underwater.avif);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+
+.stopwatch {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(250, 250, 250, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    border: 1px solid rgba(154, 154, 154, 0.1);
+    text-align: center;
+    padding: 40px 0;
+    color: #222;
+    margin: 200px auto 0;
+    
+}
+
+.stopwatch img {
+    width: 50px;
+}
+
+.stopwatch h1{
+    margin-top: 60px;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons img {
+    width: 50px;
+    margin: 20px 20px;
+    cursor: pointer;
+}
+
+.buttons img:nth-child(2){
+    width: 80px;
+}
