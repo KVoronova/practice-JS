@@ -117,7 +117,7 @@ pass.addEventListener('input', updatePasswordStrength);
 
 
 
-//Second VERS (update code)
+//Second VERS (refactoring)
 
 
 // Функция для обновления стилей и текста
