@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="gallery">
+                <img src="img/fujiphilm-unsplash.jpg" alt="Fujiphilm Instax" id="productImg">
+                <div class="controls">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+            <div class="details">
+                <h1>Fujiphilm Instax</h1>
+                <h2>$21.00</h2>
+                <h3>12% OFF</h3>
+                <p>Fujifilm Instax Mini 9 Instant Camera F12.7 60mm.</p>
+                <form>
+                    <div class="model-select">
+                        <p>Model:</p>
+                        <label for="mini9">
+                            <input type="radio" name="model" id="mini9">
+                            <span>Mini 9</span>
+                        </label>
+                        <label for="miniSE">
+                            <input type="radio" name="model" id="miniSE">
+                            <span>Mini 11</span>
+                        </label>
+                        <label for="mini12">
+                            <input type="radio" name="model" id="mini12">
+                            <span>Mini 12</span>
+                        </label>
+                    </div>
+
+                    <div class="color-select">
+                        <p>Color:</p>
+                        <label for="red">
+                            <input type="radio" name="color" id="red">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="mint">
+                            <input type="radio" name="color" id="mint">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="white">
+                            <input type="radio" name="color" id="white">
+                            <span class="color-3"></span>
+                        </label>
+                    </div>
+
+                    <div class="quantity-select">
+                        <p>Quantity:</p>
+                        <input type="number" value="1">
+                    </div>
+                </form>
+                <button class="btn-main">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
