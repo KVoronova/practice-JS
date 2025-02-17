@@ -12,16 +12,22 @@
 </head>
 <body>
 
-    <div class="container">
-        <div id="left">
+    <div class="container">    
 
+    <form id="addTaskForm">
+        <input type="text" id="taskInput" placeholder="Add new task" required>
+        <button type="submit"> <img src="img/add.png" alt="Add task"></button>
+    </form>  
+
+    <div id="task-containers">
+        <div id="left">
             <div class="list" draggable="true">
                 <img src="img/drag.png" alt="List">
                 Task #1
             </div>
             <div class="list" draggable="true">
                 <img src="img/drag.png" alt="List">
-                Task #2
+                Task #2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </div>
             <div class="list" draggable="true">
                 <img src="img/drag.png" alt="List">
@@ -35,15 +41,16 @@
                 <img src="img/drag.png" alt="List">
                 Task #5
             </div>
+        </div> 
 
-            <div class="btn">
-                <img src="img/add.png" alt="Add task">
-            </div>
-           
-        </div>
         <div id="right"></div>
 
     </div>
+
+</div>    
+
+
     
+
 </body>
 </html>
